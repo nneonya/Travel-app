@@ -1,0 +1,134 @@
+.header {
+    background-color: #1C1E54;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    box-sizing: border-box;
+    padding: 0 !important;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 8px 0 8px !important;
+    box-sizing: border-box;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 16px !important;
+  }
+  
+  .header-logo {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #1C1E54;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  .header-logo-img {
+    margin-top: 5px;
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .header-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .header-link svg {
+    transition: color 0.2s ease;
+  }
+
+  .header-link:hover svg {
+    color: #0d6efd;
+  }
+  
+  .header-auth {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .header-button {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    color: #1C1E54;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .header-register-button {
+    padding: 8px 16px;
+    background-color: #1C1E54;
+    color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .header-profile-button {
+    background-color: #1C1E54;
+    color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .header-profile-button:hover {
+    background-color: rgba(248, 249, 250, 0.1);
+  }
+  
+  .header-button:hover {
+    background-color: #0d6efd;
+  }
+
+  .notifications-container {
+    position: relative;
+  }
+
+  .notification-button {
+    color: #f8f9fa;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .notification-button:hover {
+    color: #4f46e5;
+  }
+
+  /* Add media query for smaller screens */
+  @media (max-width: 1440px) {
+    .header-nav {
+      max-width: 100%;
+      padding: 0 11px;
+    }
+  }

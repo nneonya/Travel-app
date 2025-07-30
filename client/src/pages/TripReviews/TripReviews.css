@@ -1,0 +1,71 @@
+@import '../../styles/common.css';
+
+.trip-reviews-page {
+  composes: page-container from '../../styles/common.css';
+}
+
+.trip-reviews-content {
+  composes: content-container from '../../styles/common.css';
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.trip-reviews-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.trip-reviews-header h1 {
+  color: #1E1B4B;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reviews-section {
+  margin-top: 32px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  margin: 40px 0;
+  color: #666;
+}
+
+.no-reviews-message {
+  text-align: center;
+  color: #666;
+  margin: 40px 0;
+  font-size: 18px;
+} 

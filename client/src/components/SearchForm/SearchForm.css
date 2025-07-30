@@ -1,0 +1,126 @@
+.search-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 16px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+
+/* Custom styles for react-select */
+.form-group .select__control {
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  box-shadow: none;
+  min-height: 38px;
+}
+
+.form-group .select__control:hover {
+  border-color: #D1D5DB;
+}
+
+.form-group .select__control--is-focused {
+  border-color: #D1D5DB;
+  box-shadow: 0 0 0 1px #D1D5DB;
+}
+
+.form-group .select__placeholder {
+  color: #9CA3AF;
+}
+
+.arrow-icon {
+  color: #6B7280;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  margin: 0;
+  padding: 0 16px;
+  padding-top: 25px;
+  width: 32px;
+}
+
+/* Specific style for the arrow between cities */
+.arrow-icon:first-of-type {
+  font-size: 24px;
+  color: #4B5563;
+  width: 40px;
+  padding: 0 20px;
+}
+
+.date-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  height: 38px;
+  background-color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.date-input:hover {
+  border-color: #D1D5DB;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #D1D5DB;
+  box-shadow: 0 0 0 1px #D1D5DB;
+}
+
+.date-input::placeholder {
+  color: #9CA3AF;
+}
+
+.search-button {
+  background: #1C1E54;;
+  color: white;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 38px;
+  white-space: nowrap;
+  margin-top: 25px;
+  align-self: flex-start;
+}
+
+.search-button:hover {
+  background: #F08C00;
+}
+
+.search-button:disabled {
+  background: #D1D5DB;
+  cursor: not-allowed;
+}

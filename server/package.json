@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "multer": "^2.0.1",
+    "pg": "^8.16.0",
+    "postcss": "^8.5.4",
+    "react-router-dom": "^7.6.1",
+    "react-simple-star-rating": "^5.1.7",
+    "sharp": "^0.34.2",
+    "socket.io": "^4.8.1",
+    "tailwindcss": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.24",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.1",
+    "typescript": "^5.8.3"
+  }
+}

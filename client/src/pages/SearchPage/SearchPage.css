@@ -1,0 +1,153 @@
+/* SearchPage.css */
+@import '../../styles/common.css';
+
+.search-page {
+  composes: page-container from '../../styles/common.css';
+}
+
+.search-page-content {
+  composes: content-container from '../../styles/common.css';
+}
+
+.search-form-wrapper {
+  composes: form-container from '../../styles/common.css';
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1C1E54;
+  text-align: center;
+}
+
+.trip-list {
+  composes: trip-list from '../../styles/common.css';
+}
+
+.trip-list-item {
+  composes: trip-list-item from '../../styles/common.css';
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  margin: 40px 0;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  margin: 40px 0;
+  color: #666;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: #1C1E54;
+}
+
+.filter-group select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #1C1E54;
+  background-color: white;
+  color: #1C1E54;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #1C1E54;
+  color: white;
+}
+
+.search-page h1 {
+  color: #2c2d5b;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-form-item {
+  flex: 1;
+  min-width: 150px;
+}
+
+.search-form input[type="date"] {
+  min-width: 120px;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  background-color: #00d5b0;
+  color: #1C1E54;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-trips-message {
+  color: #666;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.search-container .search-button {
+  background-color: #00d5b0;
+  color: #1C1E54;
+  height: auto;
+  margin-top: 0;
+  padding: 12px 32px;
+  font-size: 1rem;
+}
+
+.search-container .search-button:hover {
+  background-color: #00b894; /* Более темный оттенок для hover */
+}

@@ -1,0 +1,126 @@
+.notifications-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.notifications-page h1 {
+  margin-bottom: 20px;
+  color: #1E1B4B;
+}
+
+.debug-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.debug-button {
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.debug-button:hover {
+  background-color: #4f46e5;
+}
+
+.debug-info {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+.loading,
+.error,
+.no-notifications {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.request-item {
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.request-info {
+  margin-bottom: 12px;
+}
+
+.trip-details {
+  margin-bottom: 8px;
+}
+
+.trip-details strong {
+  color: #1E1B4B;
+  font-size: 18px;
+}
+
+.trip-dates {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.user-details {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.request-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.accept-button,
+.reject-button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.accept-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #da190b;
+} 

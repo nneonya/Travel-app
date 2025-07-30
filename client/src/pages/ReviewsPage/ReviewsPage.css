@@ -1,0 +1,172 @@
+@import '../../styles/common.css';
+
+.reviews-page {
+  composes: page-container;
+}
+
+.reviews-content {
+  composes: content-container;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.reviews-content h1 {
+  color: #1E1B4B;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #4b5563;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0 0 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+  box-shadow: none;
+}
+
+.tab.active {
+  color: #1E1B4B;
+}
+
+.tab.active::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #1E1B4B;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.tab:hover {
+  color: #1E1B4B;
+  background: none;
+}
+
+.filters-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.city-group {
+  flex: 0 0 180px;
+  min-width: 120px;
+  max-width: 200px;
+}
+
+.city-select {
+  width: 100%;
+  min-width: 100px;
+  max-width: 200px;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.search-group {
+  flex: 1 1 200px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.find-button {
+  padding: 0.5rem 1.25rem;
+  background: #1E1B4B;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 0.5rem;
+}
+
+.find-button:hover {
+  background: #2d2a5c;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.sort-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  color: #4b5563;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sort-button:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.sort-button.active {
+  background-color: #1E1B4B;
+  color: white;
+  border-color: #1E1B4B;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #1E1B4B;
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fee2e2;
+  border-radius: 0.5rem;
+}
+
+.no-reviews {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+} 

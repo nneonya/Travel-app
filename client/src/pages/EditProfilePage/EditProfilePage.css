@@ -1,0 +1,142 @@
+.edit-profile-page {
+  padding: 32px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.edit-profile-container {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-container h1 {
+  color: #1E1B4B;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.avatar-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.avatar-preview {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.avatar-overlay span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.avatar-preview:hover .avatar-overlay {
+  opacity: 1;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1E1B4B;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #F9B44E;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-button {
+  background-color: #F9B44E;
+  color: #1E1B4B;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #f8a93d;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: #1E1B4B;
+  border: 1px solid #1E1B4B;
+}
+
+.cancel-button:hover {
+  background-color: #f8f9fa;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  margin: 48px 0;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin: 24px 0;
+  padding: 12px;
+  background-color: #f8d7da;
+  border-radius: 8px;
+} 

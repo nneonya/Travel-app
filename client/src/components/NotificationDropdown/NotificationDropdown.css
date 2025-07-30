@@ -1,0 +1,160 @@
+.notification-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+
+.notification-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1E1B4B;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.close-button:hover {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.loading,
+.error,
+.no-notifications {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.request-item {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.request-info {
+  margin-bottom: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-name-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.user-name-info .name {
+  font-weight: 500;
+}
+
+.user-name-info .age {
+  color: #64748b;
+}
+
+.user-name-info .city {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-name-info .city::before {
+  content: "•";
+  margin: 0;
+}
+
+.trip-details {
+  margin-bottom: 8px;
+}
+
+.trip-details strong {
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.trip-dates {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.request-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.accept-button,
+.reject-button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.accept-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #da190b;
+} 

@@ -1,0 +1,96 @@
+@import '../../styles/common.css';
+
+.my-trips-page {
+  composes: page-container from '../../styles/common.css';
+}
+
+.my-trips-content {
+  composes: content-container from '../../styles/common.css';
+}
+
+.my-trips-page h1 {
+  color: #1E1B4B;
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+  justify-content: center;
+}
+
+.status-tab {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-tab:hover {
+  color: #1E1B4B;
+}
+
+.status-tab.active {
+  color: #1E1B4B;
+}
+
+.status-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #F9B44E;
+}
+
+.trip-count {
+  background-color: #f0f2ff;
+  color: #1E1B4B;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.trip-list {
+  composes: trip-list from '../../styles/common.css';
+}
+
+.trip-list-item {
+  composes: trip-list-item from '../../styles/common.css';
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  margin: 40px 0;
+  color: #666;
+}
+
+.no-trips-message {
+  color: #666;
+  text-align: center;
+  margin: 40px 0;
+}
+
