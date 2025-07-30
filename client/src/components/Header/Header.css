@@ -68,7 +68,7 @@
     gap: 12px;
   }
   
-  .header-button {
+  .header-log-button {
     padding: 8px 16px;
     background-color: #f8f9fa;
     color: #1C1E54;
@@ -91,7 +91,7 @@
     background-color: #1C1E54;
     color: #f8f9fa;
     border: 1px solid #f8f9fa;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 8px 16px;
     cursor: pointer;
     text-decoration: none;

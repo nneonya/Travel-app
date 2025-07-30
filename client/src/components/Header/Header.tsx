@@ -79,7 +79,7 @@ const Header: React.FC = () => {
               </div>
               <div className="header-auth">
                 <button onClick={handleProfileClick} className="header-profile-button">Профиль</button>
-                <button onClick={logout} className="header-button">Выйти</button>
+                <button onClick={logout} className="header-log-button">Выйти</button>
               </div>
             </div>
           </>
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
             <div className="header-right">
               <div className="header-auth">
                 <button onClick={handleOpenRegisterModal} className="header-register-button">Зарегистрироваться</button>
-                <button onClick={handleOpenLoginModal} className="header-button">Войти</button>
+                <button onClick={handleOpenLoginModal} className="header-log-button">Войти</button>
               </div>
             </div>
           </>
